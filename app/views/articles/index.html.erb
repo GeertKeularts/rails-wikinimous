@@ -1,0 +1,15 @@
+
+<div class="website">
+  <div class="total">
+    <h1>Wikinimous</h1>
+    <div class="content">
+      <% @articles.each do |article|  %>
+      <li>
+      <%= link_to article.title, article_path(article)  %>
+      </li>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
